@@ -29,19 +29,21 @@ Srce osnovna klijentska aplikacija sadržava module:
 Aplikacija je u potpunosti izrađena u JavaScript programskom jeziku te koristi modularni dizajn (ES6+ sintaksa). Moduli su neovisni te je svaki zasebno moguće koristiti. Za produkcijsku okolinu predlažemo spajanje modula u jednu cjelinu te ugradnju u glavnu (jedinu) stranicu, index.html (single page application). Iz programskog koda, zbog autorskih prava, uklonjene su sve * *3rd party datoteke* * .Nakon preuzimanja programskog koda napravite pretragu po ključnoj riječi **TODO:**. Na navedena mjesta potrebno je ugraditi adrese koje vode do restoranskog API-ja.
 
 ISSP Restoran REST API produkcijska okolina: [https://issp.srce.hr/RestoranAPI/index.html](https://issp.srce.hr/RestoranAPI/index.html)
-
 ISSP Restoran REST API testna okolina: [https://issp.srce.hr/TESTRestoranAPI/index.html](https://issp.srce.hr/TESTRestoranAPI/index.html)
 
 ## Tehnička podrška
 issp@srce.hr
 
 ## Slike sustava
-
+Prijava djelatnika u sustav
 ![slika 1 login](/slikeSustava/ss4.png)
-* *Prijava djelatnika u sustav* *
+
+Početna stranica sustava
 ![slika 2 pocetna stranica](/slikeSustava/ss1.png)
-* *Početna stranica sustava* *
+
+Operacije s artiklima
 ![slika 3 prikaz artikala](/slikeSustava/ss2.png)
-* *Operacije s artiklima* *
+
+Prikaz blagajne i košarice
 ![slika 4 blagajna](/slikeSustava/ss3.png)
-* *Prikaz blagajne i košarice* *
+
