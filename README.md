@@ -8,7 +8,7 @@ Novi model rada aplikacije za restorane temelji se na uspostavi odgovarajućeg a
 
 Bitna stavka kod ovog modela je postojanje stalne veze na Internet. Restoranskim API-jem je moguće ostvariti direktnu vezu između blagajne i središnje baze podataka, ali ovaj pristup također omogućava i uvođenje lokalnog poslužitelja (struktura i hijerarhijska organizacija po izboru davatelja usluge). Lokalni poslužitelj može prosljeđivati zahtjeve pojedinih blagajni i pohranjivati podatke za vlastite potrebe, izradu analiza ili uparivanje sa aplikacijama treće strane. Lokalna baza podataka na svakoj blagajni zasebno više nije potrebna jer se izračuni izvršavaju u trenutku zahtjeva.
 
-Više informacija potražite na službenom ISSP portalu: [https://issp.srce.hr/](https://issp.srce.hr/)
+**Više informacija potražite na službenom ISSP portalu: [https://issp.srce.hr/](https://issp.srce.hr/)**
 
 ## O aplikaciji
 Srce osnovna klijentska aplikacija sadržava module:
