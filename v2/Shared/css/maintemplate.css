@@ -1,0 +1,681 @@
+:root {
+    --srce: #C00000;
+    --studenti: #bfc946;
+    --studenti-light: #dfe3a2;
+    --studenti-dark: #63681e;
+    --restorani: #36cccb;
+    --restorani-light: #9ae5e4;
+    --restorani-dark: #1a6666;
+    --administratori: #e78900;
+    --administratori-light: #ffc673;
+    --administratori-dark: #A86500;
+    --podaci: #f04e4e;
+    --podaci-light: #f7a6a6;
+    --podaci-dark: #920c0c;
+}
+
+html, body {
+	background-color: #fafafa;
+}
+
+main {
+ min-height: calc(100vh - 400px);
+}
+
+.ligth-gray-color {
+    background-color: #e0e0e0;
+    color: black;
+}
+
+#clockdiv{
+	font-family: sans-serif;
+	color: black;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: rgba(0, 0, 0, .2);
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #33b5e5;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
+
+.toast {
+    margin-top: 3.5em !important;
+}
+
+#toast-container>div {
+    border-radius: .125rem;
+}
+
+.toast-success {
+    background-color: var(--success);
+    border: 0;    
+}
+
+.toast-error {
+    background-color: var(--danger);
+    border: 0;
+}
+
+.toast-info {
+    background-color: var(--info);
+    border: 0;
+}
+
+.toast-warning {
+    background-color: var(--warning);
+    border: 0;
+}
+
+.card.card-cascade.narrower {
+    margin-top: 1.25rem;
+}
+  
+.card.card-cascade.narrower .view.view-cascade {
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: -1.25rem;
+}
+
+.card.card-cascade .view.view-cascade.gradient-card-header {
+    padding: 1.6rem 1rem;
+    text-align: center;
+}
+
+.card.card-cascade .view.view-cascade {
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    -webkit-border-radius: .25rem;
+    border-radius: .25rem;
+}
+
+.testimonial-card .card-up {
+    overflow: hidden;
+    height: 150px;
+    -webkit-border-top-left-radius: .25rem;
+    border-top-left-radius: .25rem;
+    -webkit-border-top-right-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+.testimonial-card .avatar {
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 250px;
+    margin-top: -125px;
+    overflow: hidden;
+    border: 5px solid #fff;
+}
+
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: none !important;
+}
+
+table th {
+    font-weight: bold;
+}
+
+table.table thead td {
+    border-top: none;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.btn-outline-danger {
+    border: 2px solid var(--srce)!important;
+    background-color: transparent !important;
+    color: var(--srce) !important;
+}
+
+.text-danger {
+    color: var(--srce) !important;
+}
+
+.badge-danger {
+    background-color: var(--srce) !important;
+}
+
+.btn-danger {
+    background-color: var(--srce) !important;
+    white-space: nowrap;
+    color: #fff;
+}
+
+label {
+    color: var(--dark);
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid var(--srce);
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.custom-control-input:checked~.custom-control-label:before {
+    color: #fff;
+    border-color: #212121;
+    background-color: #212121;
+}
+
+.srceLogoFooter {
+    height: 20px;
+    width: 60px;
+}
+
+.srceLogoHeader {
+    height: 55px;
+}
+
+a.skip-main {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+
+a.skip-main:focus, a.skip-main:active {
+    background-color: #000;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow: auto;
+    margin: 10px 35%;
+    padding: 5px;
+    border: 4px solid white;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    z-index: 999;
+}
+
+a {
+    cursor: pointer !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: var(--srce) !important;
+}
+
+html[data-highcontrast-applied="true"] .srceLogoHeader {
+    filter: invert(100%) grayscale(100%);
+}
+
+.custom-control-input:focus~.custom-control-label:before {
+    box-shadow: 0 0 0 0.2rem rgba(33, 33, 33, 0.25) !important;
+}
+
+.disabled {
+    cursor: not-allowed !important;
+    pointer-events: none;
+}
+
+.bt-black {
+    border-top: 5px solid black;
+}
+
+.text-success {
+    color: #24883E !important;
+}
+
+caption {
+    color: #4A5055 !important;
+}
+
+.izdvojeno {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+.bg-studenti {
+    background-color: var(--studenti);
+}
+
+.bg-studenti-light {
+    background-color: var(--studenti-light);
+}
+
+.btn-studenti {
+    background-color: var(--studenti-dark);
+    color: #fff;
+}
+
+.btn-studenti-disabled {
+    pointer-events: none;
+}
+
+hr.studenti {
+    border-top: 2px solid var(--studenti-light);
+}
+
+.studenti-empty {
+    border-bottom: 5px solid var(--studenti);
+}
+
+
+.bg-restorani {
+    background-color: var(--restorani);
+}
+
+.bg-restorani-light {
+    background-color: var(--restorani-light);
+}
+
+.btn-restorani {
+    background-color: var(--restorani-dark);
+    color: #fff;
+}
+
+.btn-restorani-disabled {
+    pointer-events: none;
+}
+
+hr.restorani {
+    border-top: 2px solid var(--restorani-light);
+}
+
+.restorani-empty {
+    border-bottom: 5px solid var(--restorani);
+}
+
+.bg-administratori {
+    background-color: var(--administratori);
+}
+
+.bg-administratori-light {
+    background-color: var(--administratori-light);
+}
+
+.btn-administratori {
+    background-color: var(--administratori-dark);
+    color: #fff;
+}
+
+.btn-administratori-pocetna {
+    background-color: #885200;
+    color: #fff;
+}
+
+.btn-administratori-disabled {
+    pointer-events: none;
+}
+
+hr.administratori {
+    border-top: 2px solid var(--administratori-light);
+}
+
+.administratori-empty {
+    border-bottom: 5px solid var(--administratori);
+}
+
+.bg-podaci {
+    background-color: var(--podaci);
+}
+
+.bg-podaci-light {
+    background-color: var(--podaci-light);
+}
+
+.btn-podaci-active {
+    background-color: var(--podaci-dark);
+}
+
+.btn-podaci-disabled {
+    pointer-events: none !important;
+}
+
+hr.podaci {
+    border-top: 2px solid var(--podaci-light);
+}
+
+.podaci-empty {
+    border-bottom: 5px solid var(--podaci);
+}
+
+.error-empty {
+    border-bottom: 5px solid #bdbdbd;
+}
+
+
+.menu-naslovnica {
+    border-bottom: 5px solid var(--srce);
+}
+
+.menu-studenti {
+    border-bottom: 5px solid #2196f3;
+}
+
+.menu-restorani {
+    border-bottom: 5px solid #ffc107;
+}
+
+.menu-administratori {
+    border-bottom: 5px solid #673ab7;
+}
+
+.menu-podaci {
+    border-bottom: 5px solid #9e9e9e;
+}
+
+.arrow-right {
+    background-color: #444;
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, .8);
+    height: 100px;
+    left: -59px;
+    position: absolute;
+    top: -39px;
+    width: 150px;
+    -webkit-transform: rotate(-45deg);
+}
+  
+.arrow-right span {
+    color: #f5f5f5;
+    font-family: sans-serif;
+    font-size: 1.005em;
+    left: 28px;
+    top: 78px;
+    position: absolute;
+    width: 90px;
+}
+
+.material-icons.md-12 { font-size: 12px; }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: top !important;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    display: inline-flex;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+}
+
+@keyframes spin-md {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.spin-md {
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.access-icon {
+    color: #4c5ac5;
+}
+
+.footer-faded {
+    color: #ffffff99;
+}
+a, .btn-link {
+    color: #212121;    
+}
+
+.btn-link {
+    font-size: 0.9rem !important;
+    color: #212121 !important;
+    text-transform: none !important;
+}
+
+
+.pulsate:hover {
+    -webkit-animation: pulsate 2s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    animation: pulsate 2s ease-out;
+    animation-iteration-count: infinite; 
+}
+@-webkit-keyframes pulsate {
+    0% { 
+        opacity: 1.0;
+    }
+    50% { 
+        opacity: 0.5;
+    }
+    100% { 
+        opacity: 1.0;
+    }
+}
+@keyframes pulsate {
+    0% { 
+        opacity: 1.0;
+    }
+    50% { 
+        opacity: 0.5;
+    }
+    100% { 
+        opacity: 1.0;
+    }
+}
+
+.screen-reader-text { 
+    border:0;   
+    clip: rect(1px, 1px, 1px, 1px); 
+    clip-path: inset(50%);
+    height: 1px; 
+    margin: -1px;
+    width: 1px; 
+    overflow: hidden; 
+    position: absolute !important;
+    word-wrap:normal !important;
+ }
+
+ .break-words {
+    overflow-wrap: break-word;
+    word-wrap: break-word;  
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  
+  }
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: transparent;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #f5f5f5;
+}
+
+table.table a[type="button"] {
+    color: #fff;
+}
+
+.dropdown-header {
+    padding: 0.5rem 1rem;
+    font-size: inherit;
+}
+
+.navbar .dropdown-menu a {
+    padding: 0.2rem 3rem;
+}
+
+.badge {
+    font-size: inherit;
+}
+
+.btn-dark {
+    background-color: #444;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+/* pristupačnost */
+
+html[data-highcontrast-applied="true"] .srceLogoFooterBig{
+    filter: grayscale(1) invert(1);
+}
+
+html[data-highcontrast-applied="true"] .bg-studenti {
+    border: 1px solid #fff
+}
+
+html[data-highcontrast-applied="true"] .bg-restorani {
+    border: 1px solid #fff
+}
+
+html[data-highcontrast-applied="true"] .bg-administratori {
+    border: 1px solid #fff
+}
+
+html[data-highcontrast-applied="true"] .bg-podaci {
+    border: 1px solid #fff
+}
+
+html[data-highcontrast-applied="true"] img[alt="student ikonica"] {
+    filter: grayscale(1)!important;
+}
+
+html[data-highcontrast-applied="true"] img[alt="restoran ikonica"] {
+    filter: grayscale(1)!important;
+}
+
+html[data-highcontrast-applied="true"] img[alt="administracija ikonica"] {
+    filter: grayscale(1)!important;
+}
+
+html[data-highcontrast-applied="true"] img[alt="pristup podacima ikonica"] {
+    filter: grayscale(1)!important;
+}
+
+html[data-highcontrast-applied="true"][data-increasetext-applied="true"] hr.restorani {
+    display: none!important;
+}
+
+html[data-highcontrast-applied="true"][data-increasetext-applied="true"] hr.studenti {
+    display: none!important;
+}
+
+html[data-highcontrast-applied="true"][data-increasetext-applied="true"] hr.administratori {
+    display: none!important;
+}
+
+html[data-highcontrast-applied="true"][data-increasetext-applied="true"] hr.podaci {
+    display: none!important;
+}
+
+html[data-highcontrast-applied="true"][data-increasetext-applied="true"] .studenti-empty {
+    display: none!important;
+}
+
+html[data-highcontrast-applied="true"][data-increasetext-applied="true"] .studenti-empty {
+    display: none!important;
+}
+
+html[data-highcontrast-applied="true"][data-increasetext-applied="true"] .restorani-empty {
+    display: none!important;
+}
+
+html[data-highcontrast-applied="true"][data-increasetext-applied="true"] .administratori-empty {
+    display: none!important;
+}
+
+html[data-highcontrast-applied="true"][data-increasetext-applied="true"] .podaci-empty {
+    display: none!important;
+}
+
+html[data-highcontrast-applied="true"][data-dyslexic-applied="true"] hr.restorani {
+    display: none!important;
+}
+
+html[data-highcontrast-applied="true"][data-dyslexic-applied="true"] hr.studenti {
+    display: none!important;
+}
+
+html[data-highcontrast-applied="true"][data-dyslexic-applied="true"] hr.administratori {
+    display: none!important;
+}
+
+html[data-highcontrast-applied="true"][data-dyslexic-applied="true"] hr.podaci {
+    display: none!important;
+}
+
+html[data-highcontrast-applied="true"][data-dyslexic-applied="true"] .studenti-empty {
+    display: none!important;
+}
+
+html[data-highcontrast-applied="true"][data-dyslexic-applied="true"] .studenti-empty {
+    display: none!important;
+}
+
+html[data-highcontrast-applied="true"][data-dyslexic-applied="true"] .restorani-empty {
+    display: none!important;
+}
+
+html[data-highcontrast-applied="true"][data-dyslexic-applied="true"] .administratori-empty {
+    display: none!important;
+}
+
+html[data-highcontrast-applied="true"][data-dyslexic-applied="true"] .podaci-empty {
+    display: none!important;
+}
