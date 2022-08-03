@@ -25,6 +25,10 @@ Srce osnovna klijentska aplikacija sadržava module:
   -	Komunikacija sa središnjom bazom podataka.
   -	Fiskalizacija i storniranje računa
   
+- v2
+  - Dvojno iskazivanje cijena (Kn i €)
+  - Podrška za offline način rada (aplikacija sprema račune u privremenu memoriju)
+  
 ## Tehnička specifikacija
 Aplikacija je u potpunosti izrađena u JavaScript programskom jeziku te koristi modularni dizajn (ES6+ sintaksa). Moduli su neovisni te je svaki zasebno moguće koristiti. Za produkcijsku okolinu predlažemo spajanje modula u jednu cjelinu te ugradnju u glavnu (jedinu) stranicu, index.html (single page application). Iz programskog koda, zbog autorskih prava, uklonjene su sve *3rd party datoteke*. Nakon preuzimanja programskog koda napravite pretragu po ključnoj riječi **TODO:**. Na navedena mjesta potrebno je ugraditi adrese koje vode do restoranskog API-ja.
 
